@@ -1,17 +1,15 @@
-Cloudflare Workers - minimal server (no game files)
+Cloudflare Workers server - only 3 files, no game.
 
 Files:
-- wrangler.jsonc
-- src/index.js
+- index.js
+- wrangler.toml
+- README.txt
 
 Deploy:
-1. Extract this ZIP.
-2. Open a terminal in the extracted folder (the folder containing wrangler.jsonc).
-3. Run:
+1. Put these three files in the root of your GitHub repository (same level, no folders).
+2. To deploy from a terminal in this folder, run:
    npx wrangler login
    npx wrangler deploy
 
-Cloudflare will print your live workers.dev URL after deployment.
-Health check: append /health to the deployed URL.
-
-Note: This package contains the server source/configuration only. It cannot create a live URL until deployed to your Cloudflare account.
+Cloudflare creates the live workers.dev URL after deployment.
+Health check: add /health to the URL.
