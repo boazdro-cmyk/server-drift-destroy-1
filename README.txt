@@ -1,14 +1,17 @@
-Drift & Destroy — Cloudflare Workers static site
+Cloudflare Workers - minimal server (no game files)
 
 Files:
-- public/index.html : your uploaded game, kept intact
-- wrangler.jsonc    : Cloudflare Workers configuration
+- wrangler.jsonc
+- src/index.js
 
 Deploy:
 1. Extract this ZIP.
-2. Open a terminal in the extracted folder.
-3. Install Node.js if needed, then run:
+2. Open a terminal in the extracted folder (the folder containing wrangler.jsonc).
+3. Run:
    npx wrangler login
    npx wrangler deploy
 
-The game is currently a self-contained HTML file, so no separate server/API file is needed for serving the page.
+Cloudflare will print your live workers.dev URL after deployment.
+Health check: append /health to the deployed URL.
+
+Note: This package contains the server source/configuration only. It cannot create a live URL until deployed to your Cloudflare account.

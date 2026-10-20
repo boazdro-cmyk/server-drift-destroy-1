@@ -1,7 +1,5 @@
 {
-  "name": "drift-destroy",
-  "compatibility_date": "2026-10-19",
-  "assets": {
-    "directory": "./public"
-  }
+  "name": "my-server",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-19"
 }
